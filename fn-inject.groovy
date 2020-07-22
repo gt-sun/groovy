@@ -9,3 +9,4 @@ assert convertToCSV( null ) == ''
 assert convertToCSV( ['aaa', 'bbb ', null, ' ccc '] ) == 'aaa,bbb,ccc'
 
 assert [1, 2, 3].inject(0) { sum, value -> sum + value } == 6  // 0 + 1 + 2 + 3
+assert [1, 2, 3].inject(0, {sum, value -> sum + value }) == 6  // 0 + 1 + 2 + 3
